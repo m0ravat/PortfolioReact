@@ -13,8 +13,8 @@ export default function Navbar(){
             <li><ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink></li>
             </ul>
             <ul className="flex space-x-[10%] max-[1100px]:hidden right-0 pr-16">
-                <li><Link>Home</Link></li>
-                <li><Link>Projects</Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
                 <li><Link>Skills</Link></li>
             </ul>
         </nav>
