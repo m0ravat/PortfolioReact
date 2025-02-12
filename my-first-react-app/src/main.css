@@ -8,9 +8,9 @@
 body{
     font-family: my-font;
 }
-@layer{
+@layer utilities{
   .glow-cyan {
-    box-shadow: 0 0 20px 5px rgba(6, 182, 212, 0.5); /* cyan-500 with 50% opacity */
+    box-shadow: 0 0 30px 20px rgba(6, 182, 212, 0.5); /* cyan-500 with 50% opacity */
   }
 }
 .custom-gradient1 {
