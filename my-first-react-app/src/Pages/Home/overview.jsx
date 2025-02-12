@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import Timeline1 from "../../Components/timeline";
+import Intro from "./introduction";
+import Separator from "../../Components/separator";
 export default function Overview(){
     const [selectedContent, setSelectedContent] = useState("");
     const cards = [
@@ -42,51 +44,44 @@ export default function Overview(){
     };
     return(
         <div className=" bg-repeat-y bg-cover w-full pt-12">
-            <div className="px-10 text-large text-white ">
-                <h1 className="text-4xl mb-2">Hi, my name is <span className="text-cyan-500">Muhammad Ravat</span></h1>
-                <h2 className="text-large">I am an aspiring <span className="text-cyan-500">software engineer </span> 
-                with a particular interest in <span className="text-cyan-500">backend development!</span></h2>
-                <h2> To learn more <span className="text-cyan-500">about me,</span> just keep scrolling!  <br />
-                ... Or you can click on any of the 
-                links in the <span className="text-cyan-500">navigation bar at the top</span> </h2>
-            </div>
-            <div className="bg-cyan-500 w-full h-1 mt-20 mb-10"></div>
+            <Intro />
+            <Separator />
             <div className="text-center text-medium">
                 <h2 className="text-gray-200 text-5xl mb-10">Overview</h2>
                 <div className="flex flex-row max-sm:flex-col">
-                <aside className="w-2/6 text-white flex flex-col max-sm:w-5/6 items-center p-2 mr-40">
-                    <img src="/blueMR.png" alt="" className="rounded-lg w-[90%] mb-4 glow-cyan" />
-                    <div className="flex space-x-10 mb-4">
-                        <Link to="" className="rounded-2xl custom-gradient1 p-4">Resume</Link>
-                        <Link to="https://github.com/m0ravat" className="rounded-2xl custom-gradient2 p-4">GitHub</Link>
-                    </div>
-                    <Link to="https://www.linkedin.com/in/muhammad-ravat/" className="rounded-2xl custom-gradient3 text-black p-4">LinkedIn</Link>
-                </aside>
+                    <aside className="w-2/6 text-white flex flex-col max-sm:w-5/6 items-center p-2 mr-40">
+                        <img src="/blueMR.png" alt="" className="rounded-lg w-[90%] mb-4 glow-cyan" />
+                        <div className="flex space-x-10 mb-4">
+                            <Link to="" className="rounded-2xl custom-gradient1 p-4">Resume</Link>
+                            <Link to="https://github.com/m0ravat" className="rounded-2xl custom-gradient2 p-4">GitHub</Link>
+                        </div>
+                        <Link to="https://www.linkedin.com/in/muhammad-ravat/" className="rounded-2xl custom-gradient3 text-black p-4">LinkedIn</Link>
+                    </aside>
 
-                <main className="w-4/6 text-medium font-medium h-max flex flex-row text-gray-200 p-2 pr-10 max-sm:pr-2 max-sm:w-full">
-                <div className="flex flex-col">
-                    {cards.map((card) => (
-                    <div
-                        key={card.id}
-                        className="w-72 h-max p-4 rounded-md bg-gray-900 border-white border-2 
-                        text-white  cursor-pointer hover:bg-gray-800 transition-colors max-sm:w-32 max-sm:p-1"
-                        onClick={() => handleCardClick(card.description)}
-                    >
-                        <p>
-                            {card.title} <br />
-                            <span className="text-gray-400">{card.date}</span>
-                        </p>
-                    </div>
-                    ))}
+                    <main className="w-4/6 text-medium max-sm:text-small font-medium max-h-[21rem] flex flex-row text-gray-200 p-2 pr-10 max-sm:pr-2 max-sm:w-full">
+                        <div className="flex flex-col h-max">
+                            {cards.map((card) => (
+                            <div
+                                key={card.id}
+                                className="w-72 h-[7rem] p-4 rounded-md bg-gray-900 border-white border-2 
+                                text-white  cursor-pointer hover:bg-gray-800 transition-colors max-sm:w-32 max-sm:p-1"
+                                onClick={() => handleCardClick(card.description)}
+                            >
+                                <p>
+                                    {card.title} <br />
+                                    <span className="text-gray-400">{card.date}</span>
+                                </p>
+                            </div>
+                            ))}
+                        </div>
+                        <div className="bg-gray-900 w-full border-white border-2 rounded-md p-10 flex items-center overflow-y-scroll">
+                            <p className="mx-auto"style={{ whiteSpace: "pre-line" }}>{selectedContent || "Click a card to view details"}</p>
+                        </div>
+                    </main>
                 </div>
-
-
-                    <div className="bg-gray-900 w-full min-h-max border-white border-2 rounded-md p-10 flex items-center">
-                        <p className="mx-auto"style={{ whiteSpace: "pre-line" }}>{selectedContent || "Click a card to view details"}</p>
-                    </div>
-                </main>
             </div>
-            </div>
+            <Separator />
+            <h1 className="text-4xl text-cyan-500 text-center mb-10 ">My Coding Projects Timeline</h1>
             <Timeline1 />
 
         </div>
