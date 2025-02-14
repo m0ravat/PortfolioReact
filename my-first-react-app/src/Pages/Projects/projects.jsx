@@ -1,45 +1,59 @@
 import Navbar from "../../Components/Navbar/navbar";
 const projects = [
   {
-    title: "Project 1",
-    image: "https://via.placeholder.com/300", // Replace with actual image URL
-    description: "Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tools: ["React", "Node.js", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "Mosque Learning Management Program",
+    image: "/projects/madrasah.png", // Replace with actual image URL
+    description: "A project which focuses on querying results from a database while implementing OOP principles",
+    tools: ["Java", "MySQL", "IntelliJ"],
+    github: "https://github.com/m0ravat/MadrasahPro",
   },
   {
-    title: "Project 2",
-    image: "https://via.placeholder.com/300", // Replace with actual image URL
-    description: "Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tools: ["JavaScript", "Express", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "MyNotesToDo (Project Management System)",
+    image: "/projects/mynotes.png", // Replace with actual image URL
+    description: "An app that allows you to create projects and keep track of tasks to do by storing data in localstorage",
+    tools: ["JavaScript", "HTML/CSS", "OOP"],
+    github: "https://github.com/m0ravat/MyNotesToDo",
+    live: "https://www.mynotestodo.com",
   },
   {
-    title: "Project 2",
-    image: "https://via.placeholder.com/300", // Replace with actual image URL
-    description: "Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tools: ["JavaScript", "Express", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "Personal Portfolio",
+    image: "/projects/portfolio.png", // Replace with actual image URL
+    description: "Personal Portfolio designed to showcase my skills to employers and develop my frontend skills",
+    tools: ["React", "TailwindCSS", "Vercel"],
+    github: "https://github.com/m0ravat/PortfolioReact",
+    live: "https://www.moravat.me",
   },
   {
-    title: "Project 2",
-    image: "https://via.placeholder.com/300", // Replace with actual image URL
-    description: "Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tools: ["JavaScript", "Express", "MongoDB", "hhnrowf", "nerfe"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "Weather App",
+    image: "/projects/weather.png", // Replace with actual image URL
+    description: "Basic project I developed to create a mobile friendly UI and utilise APIs.",
+    tools: ["HTML", "CSS", "JS", "GIPHY API", "VisualCrossing API"],
+    github: "https://github.com/m0ravat/WeatherApp",
+    live: "https://weather-app-steel-mu.vercel.app/",
   },
   {
-    title: "Project 2",
-    image: "https://via.placeholder.com/300", // Replace with actual image URL
-    description: "Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tools: ["JavaScript", "Express", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "CV Generator",
+    image: "/projects/cv.png", // Replace with actual image URL
+    description: "My first React project which helped me grasp core concepts with forms and state management.",
+    tools: ["React"],
+    github: "https://github.com/m0ravat/CVMaker",
+    live: "https://cv-maker-vert-seven.vercel.app/",
   },
+  {
+    title: "Password Generator",
+    image: "/projects/pass.png",
+    description: "My first personal Python project which utilises many core concepts to allow people to create strong passwords",
+    tools: ["Python"],
+    github: "https://github.com/m0ravat/PasswordGen"
+  },
+  {
+    title: "Calculator App",
+    image: "/projects/calc.png",
+    description: "My first JavaScript project which utilises string manipulation to create a basic calculator. Used HTML/CSS to create a basic look for it",
+    tools: ["JavaScript", "HTML", "CSS"],
+    github: "https://github.com/m0ravat/Calculator",
+    live: "https://calculator-murex-omega.vercel.app/"
+  }
 ];
 
 const Projects = () => {
@@ -55,7 +69,7 @@ const Projects = () => {
             className="w-full hover:glow-cyan h-[30rem] overflow-y-scroll scrollable-container mb-4 border-4 border-slate-200 bg-gray-800 rounded-lg overflow-hidden transform transition-transform hover:scale-105">
               <img src={project.image} alt={project.title} className="w-full h-40 object-cover border-b-4 border-b-slate-200"/>
               <div className="p-4 text-medium">
-                <h1 className="text-large text-cyan-500 font-bold mb-3">
+                <h1 className="text-xl text-cyan-500 font-bold mb-3">
                   {project.title}
                 </h1>
                 <span className="flex justify-around mb-2">
