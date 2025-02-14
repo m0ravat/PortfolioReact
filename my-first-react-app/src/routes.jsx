@@ -1,5 +1,6 @@
 import MainPage from "./Pages/Home/mainPage";
 import Projects from "./Pages/Projects/projects";
+import Skills from './Pages/Skills/skills';
 const routes = [
   {
     path: "/",
@@ -8,6 +9,10 @@ const routes = [
   {
     path: "/projects",
     element: <Projects />,
+  },
+  {
+    path:"/skills",
+    element: <Skills />,
   }
 ];
 
