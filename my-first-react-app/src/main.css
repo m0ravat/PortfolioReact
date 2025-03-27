@@ -14,10 +14,10 @@ body{
   }
 }
 .custom-gradient1 {
-    background: linear-gradient(to right,  #ff53dd, #7c119f, #4fff04);
+    background: linear-gradient(to right,  #ff53dd,  #4fff04);
   }
   .custom-gradient2 {
-    background: linear-gradient(to right, #00ff6e, #49073c, #db5a5a);
+    background: linear-gradient(to right, #00ff6e, #db5a5a);
   }
   .custom-gradient3 {
     background: linear-gradient(to right, #0408ff, #1cb1ec,  #0481ff);

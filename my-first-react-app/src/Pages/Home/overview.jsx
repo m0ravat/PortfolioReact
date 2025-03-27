@@ -80,8 +80,6 @@ export default function Overview(){
                 </div>
             </div>
             <Separator />
-            <h1 className="text-4xl text-cyan-500 text-center mb-10 ">My Coding Projects Timeline</h1>
-
         </div>
     )
 }
