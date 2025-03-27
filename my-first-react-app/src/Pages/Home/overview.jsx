@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import Timeline1 from "../../Components/timeline";
 import Intro from "./introduction";
 import Separator from "../../Components/separator";
 export default function Overview(){
@@ -82,7 +81,6 @@ export default function Overview(){
             </div>
             <Separator />
             <h1 className="text-4xl text-cyan-500 text-center mb-10 ">My Coding Projects Timeline</h1>
-            <Timeline1 />
 
         </div>
     )
