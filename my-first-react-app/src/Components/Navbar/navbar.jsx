@@ -35,39 +35,40 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {/* Mobile Menu Button */}
-      <button className="hidden max-[1100px]:block text-cyan-500" onClick={toggleMenu} aria-label="Toggle menu">
-        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+    {/* Mobile Menu Button */}
+    <button className="md:hidden text-cyan-500" onClick={toggleMenu} aria-label="Toggle menu">
+    {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+    </button>
 
-      {/* Mobile Menu */}
-      <div
-        className={`fixed top-20 right-0 h-screen w-64 bg-black transform transition-transform duration-300 ease-in-out z-20 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <ul className="flex flex-col space-y-6 p-6">
-          <li>
-            <Link href="/" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link href="/skills" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Skills
-            </Link>
-          </li>
-        </ul>
-      </div>
+    {/* Mobile Menu */}
+    <div
+    className={`fixed top-20 right-0 h-screen w-64 bg-black transform transition-transform duration-300 ease-in-out z-20 
+        ${isMenuOpen ? "right-0" : "right-[-100%]"}`}
+    >
+    <ul className="flex flex-col space-y-6 p-6">
+        <li>
+        <Link to="/" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
+            Home
+        </Link>
+        </li>
+        <li>
+        <Link to="/projects" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
+            Projects
+        </Link>
+        </li>
+        <li>
+        <Link to="/skills" className="block py-2 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>
+            Skills
+        </Link>
+        </li>
+    </ul>
+    </div>
 
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-10 max-[1100px]:block hidden" onClick={() => setIsMenuOpen(false)}/>
-      )}
+    {/* Overlay */}
+    {isMenuOpen && (
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-10" onClick={() => setIsMenuOpen(false)} />
+    )}
+
     </nav>
   )
 }
