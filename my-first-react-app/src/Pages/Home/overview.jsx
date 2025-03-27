@@ -58,7 +58,7 @@ export default function Overview(){
                     </aside>
 
                     <main className="w-4/6 text-medium max-sm:text-small font-medium h-[21rem] flex flex-row text-gray-200 p-2 pr-10 max-sm:pr-2 max-sm:w-full">
-                        <div className="h-full flex-shrink-0 ">
+                        <div className="h-full flex-shrink-0 mr-4">
                             <table className="h-full border-collapse">
                             <tbody className="h-full">
                                 {cards.map((card) => (
