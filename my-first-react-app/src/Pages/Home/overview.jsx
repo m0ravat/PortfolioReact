@@ -51,30 +51,37 @@ export default function Overview(){
                     <aside className="w-2/6 text-white flex flex-col max-sm:w-5/6 items-center p-2 mr-40">
                         <img src="/blueMR.png" alt="" className="rounded-lg w-[90%] mb-4 glow-cyan" />
                         <div className="flex space-x-10 mb-4">
-                            <Link to="" className="rounded-2xl custom-gradient1 p-4">Resume</Link>
-                            <Link to="https://github.com/m0ravat" className="rounded-2xl custom-gradient2 p-4">GitHub</Link>
+                            <Link to="" className="rounded-2xl text-black custom-gradient1 p-4">Resume</Link>
+                            <Link to="https://github.com/m0ravat" className="rounded-2xl text-black custom-gradient2 p-4">GitHub</Link>
                         </div>
                         <Link to="https://www.linkedin.com/in/muhammad-ravat/" className="rounded-2xl custom-gradient3 text-black p-4">LinkedIn</Link>
                     </aside>
 
-                    <main className="w-4/6 text-medium max-sm:text-small font-medium max-h-[21rem] flex flex-row text-gray-200 p-2 pr-10 max-sm:pr-2 max-sm:w-full">
-                        <div className="flex flex-col h-max">
-                            {cards.map((card) => (
-                            <div
-                                key={card.id}
-                                className="w-72 h-[7rem] p-4 rounded-md bg-gray-900 border-white border-2 
-                                text-white  cursor-pointer hover:bg-gray-800 transition-colors max-sm:w-32 max-sm:p-1"
-                                onClick={() => handleCardClick(card.description)}
-                            >
-                                <p>
-                                    {card.title} <br />
-                                    <span className="text-gray-400">{card.date}</span>
-                                </p>
-                            </div>
-                            ))}
+                    <main className="w-4/6 text-medium max-sm:text-small font-medium h-[21rem] flex flex-row text-gray-200 p-2 pr-10 max-sm:pr-2 max-sm:w-full">
+                        <div className="h-full flex-shrink-0 ">
+                            <table className="h-full border-collapse">
+                            <tbody className="h-full">
+                                {cards.map((card) => (
+                                <tr key={card.id} className="h-1/3">
+                                    <td className="p-0">
+                                    <div
+                                        className="w-72 h-full p-4 rounded-md bg-gray-900 border-white border-2 
+                                        text-white cursor-pointer hover:bg-gray-800 transition-colors max-sm:w-32 max-sm:p-1 flex flex-col justify-center"
+                                        onClick={() => handleCardClick(card.description)}
+                                    >
+                                        <p>
+                                        {card.title} <br />
+                                        <span className="text-gray-400">{card.date}</span>
+                                        </p>
+                                    </div>
+                                    </td>
+                                </tr>
+                                ))}
+                            </tbody>
+                            </table>
                         </div>
-                        <div className="bg-gray-900 w-full border-white border-2 rounded-md p-10 flex items-center overflow-y-scroll">
-                            <p className="mx-auto"style={{ whiteSpace: "pre-line" }}>{selectedContent || "Click a card to view details"}</p>
+                        <div className="bg-gray-900 w-full h-full border-white border-2 rounded-md p-10 flex items-center overflow-y-auto">
+                            <p className="mx-auto" style={{ whiteSpace: "pre-line" }}>{selectedContent || "Click a card to view details"}</p>
                         </div>
                     </main>
                 </div>
