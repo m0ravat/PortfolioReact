@@ -1,6 +1,6 @@
 export default function Contact(){
     return(
-        <form className="bg-gray-800 text-cyan-500 w-3/6 max-sm:w-[90%] mx-auto h-max text-large text-center p-4">
+        <form className="bg-gray-800 text-cyan-500 w-3/6 max-sm:w-[90%] mx-auto h-max text-large text-center p-4" id="contact">
             <h1 className="text-5xl mb-10">Feedback Form</h1>
             <label htmlFor="name" className="">Your name:
                 <input type="text" name="name" id="name" className="ml-4 bg-gray-600 text-white w-max max-w-[100%] p-2 rounded-lg"/>
