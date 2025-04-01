@@ -86,14 +86,9 @@ export function HomeNavbar(){
             </li>
         </ul>
         <ul className="flex space-x-10  max-[1100px]:hidden">
-            <li><ScrollLink to="#home" smooth={true} duration={500}>Overview</ScrollLink></li>
-            <li><ScrollLink to="#hist" smooth={true} duration={500}>History</ScrollLink></li>
-            <li><ScrollLink to="#contact" smooth={true} duration={500}>Contact</ScrollLink></li>
-        </ul>
-        <ul className="flex space-x-[10%] max-[1100px]:hidden right-0 pr-16">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/skills">Skills</Link></li>
+            <li><ScrollLink to="home" smooth={true} duration={500}>Overview</ScrollLink></li>
+            <li><ScrollLink to="hist" smooth={true} duration={500}>History</ScrollLink></li>
+            <li><ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink></li>
         </ul>
             {/* Mobile Menu Button */}
       <button className=" text-cyan-500" onClick={toggleMenu} aria-label="Toggle menu">
