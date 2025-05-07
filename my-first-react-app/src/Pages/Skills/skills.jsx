@@ -1,4 +1,5 @@
-import Navbar from "../../Components/Navbar/navbar"
+import Navbar from "../../Components/navbar"
+import { DbList, BackList, FrontList, ToolsList } from "./skillsList";
 export default function Skills(){
     const frontend=[
         {
@@ -84,51 +85,19 @@ export default function Skills(){
             <div className="h-20 w-full"></div> {/* Spacer for Navbar */}
             <div className="px-4 sm:px-10 lg:px-20"> {/* Responsive padding */}
             <h2 className="text-large text-cyan-500 text-center border-b-2 border-cyan-300 pb-2 font-semibold mb-6">Frontend</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    {frontend.map((skill, index) => (
-                        <div key={index} className="p-6 bg-gray-800 rounded-lg hover:glow-cyan transform transition-transform hover:scale-105 flex flex-col items-center text-center">
-                            <img src={skill.img} alt={skill.name} className="w-12 h-12 mb-4" /> {/* 32x32 pixels */}
-                            <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-                            <p className="text-gray-400">{skill.desc}</p>
-                        </div>
-                    ))}
-                </div>
+            <FrontList frontend={frontend}/>
 
                 {/* Backend Skills */}
                 <h2 className="text-large text-cyan-500 text-center border-b-2 border-cyan-300 pb-2 font-semibold mb-6">Backend</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    {backend.map((skill, index) => (
-                        <div key={index} className="p-6 bg-gray-800 rounded-lg hover:glow-cyan transform transition-transform hover:scale-105 flex flex-col items-center text-center">
-                            <img src={skill.img} alt={skill.name} className="w-12 h-12 mb-4" /> {/* 32x32 pixels */}
-                            <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-                            <p className="text-gray-400">{skill.desc}</p>
-                        </div>
-                    ))}
-                </div>
+                <BackList backend={backend}/>
 
                 {/* Databases */}
                 <h2 className="text-large text-cyan-500 text-center border-b-2 border-cyan-300 pb-2 font-semibold mb-6">Databases</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    {databases.map((skill, index) => (
-                        <div key={index} className="p-6 bg-gray-800 rounded-lg hover:glow-cyan transform transition-transform hover:scale-105 flex flex-col items-center text-center">
-                            <img src={skill.img} alt={skill.name} className="w-12 h-12 mb-4" /> {/* 32x32 pixels */}
-                            <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-                            <p className="text-gray-400">{skill.desc}</p>
-                        </div>
-                    ))}
-                </div>
+                <DbList databases={databases}/>
 
                 {/* Tools */}
                 <h2 className="text-large text-cyan-500 text-center border-b-2 border-cyan-300 pb-2 font-semibold mb-6">Tools</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {tools.map((skill, index) => (
-                        <div key={index} className="p-6 bg-gray-800 rounded-lg hover:glow-cyan transform transition-transform hover:scale-105 flex flex-col items-center text-center">
-                            <img src={skill.img} alt={skill.name} className="w-12 h-12 mb-4" /> {/* 32x32 pixels */}
-                            <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-                            <p className="text-gray-400">{skill.desc}</p>
-                        </div>
-                    ))}
-                </div>
+                <ToolsList tools={tools}/>
             </div>
         </div>
     )
