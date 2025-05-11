@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://moravat.me.com",
+  "homepage": "https://moravat.me",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
