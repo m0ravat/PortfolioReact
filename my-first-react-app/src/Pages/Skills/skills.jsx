@@ -3,10 +3,10 @@ import useFetch from "../useFetch";
 import { DbList, BackList, FrontList, ToolsList } from "./skillsList";
 
 export default function Skills() {
-    const { data: tools, isPending: toolsPending, error: toolsError } = useFetch("http://localhost:8000/tools");
-    const { data: frontend, isPending: frontendPending, error: frontendError } = useFetch("http://localhost:8000/frontend");
-    const { data: backend, isPending: backendPending, error: backendError } = useFetch("http://localhost:8000/backend");
-    const { data: databases, isPending: databasesPending, error: databasesError } = useFetch("http://localhost:8000/databases");
+    const { data: tools, isPending: toolsPending, error: toolsError } = useFetch("https://jsonbackend-7liy.onrender.com/tools");
+    const { data: frontend, isPending: frontendPending, error: frontendError } = useFetch("https://jsonbackend-7liy.onrender.com/frontend");
+    const { data: backend, isPending: backendPending, error: backendError } = useFetch("https://jsonbackend-7liy.onrender.com/backend");
+    const { data: databases, isPending: databasesPending, error: databasesError } = useFetch("https://jsonbackend-7liy.onrender.com/databases");
 
     return (
         <div className="bg-black min-h-screen w-full text-slate-200 pb-12">

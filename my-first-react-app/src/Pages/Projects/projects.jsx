@@ -4,7 +4,7 @@ import { useState } from "react";
 import useFetch from "../useFetch";
 const Projects = () => {
   const [modalImage, setModalImage] = useState(null);
-  const {data: projects, isPending, error} = useFetch("http://localhost:8000/projects")
+  const {data: projects, isPending, error} = useFetch("https://jsonbackend-7liy.onrender.com/projects")
 
   const handleImage = (image) => {
     setModalImage(image)
