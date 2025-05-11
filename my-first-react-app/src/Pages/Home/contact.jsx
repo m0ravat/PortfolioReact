@@ -11,7 +11,7 @@ export default function Contact() {
         e.preventDefault();
         const form = {name, email, contact, feedback};
         setIsPending(true)
-        fetch('http://localhost:8000/contact', {
+        fetch('https://jsonbackend-7liy.onrender.com/contact', {
             method: "POST",
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(form)
