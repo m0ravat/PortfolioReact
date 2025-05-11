@@ -1,0 +1,159 @@
+{
+  "projects": [
+    {
+      "title": "Mosque Learning Management Program",
+      "image": "/projects/madrasah.png",
+      "description": "A project which focuses on querying results from a database while implementing OOP principles",
+      "github": "https://github.com/m0ravat/MadrasahPro",
+      "id": "5db1"
+    },
+    {
+      "title": "MyNotesToDo (Project Management System)",
+      "image": "/projects/mynotes.png",
+      "description": "An app that allows you to create projects and keep track of tasks to do by storing data in localstorage",
+      "github": "https://github.com/m0ravat/MyNotesToDo",
+      "live": "https://www.mynotestodo.com",
+      "id": "1850"
+    },
+    {
+      "title": "Personal Portfolio",
+      "image": "/projects/portfolio.png",
+      "description": "Personal Portfolio designed to showcase my skills to employers and develop my frontend skills",
+      "github": "https://github.com/m0ravat/PortfolioReact",
+      "live": "https://www.moravat.me",
+      "id": "9b3e"
+    },
+    {
+      "title": "Weather App",
+      "image": "/projects/weather.png",
+      "description": "Basic project I developed to create a mobile friendly UI and utilise APIs.",
+      "github": "https://github.com/m0ravat/WeatherApp",
+      "live": "https://weather-app-steel-mu.vercel.app/",
+      "id": "d781"
+    },
+    {
+      "title": "CV Generator",
+      "image": "/projects/cv.png",
+      "description": "My first React project which helped me grasp core concepts with forms and state management.",
+      "github": "https://github.com/m0ravat/CVMaker",
+      "live": "https://cv-maker-vert-seven.vercel.app/",
+      "id": "cce1"
+    },
+    {
+      "title": "Password Generator",
+      "image": "/projects/pass.png",
+      "description": "My first personal Python project which utilises many core concepts to allow people to create strong passwords",
+      "github": "https://github.com/m0ravat/PasswordGen",
+      "id": "3d07"
+    },
+    {
+      "title": "Calculator App",
+      "image": "/projects/calc.png",
+      "description": "My first JavaScript project which utilises string manipulation to create a basic calculator. Used HTML/CSS to create a basic look for it",
+      "github": "https://github.com/m0ravat/Calculator",
+      "live": "https://calculator-murex-omega.vercel.app/",
+      "id": "cd0e"
+    }
+  ],
+  "frontend": [
+    {
+      "img": "/skills/frontend/html.svg",
+      "name": "HTML",
+      "desc": "Leading markup language for defining website structure",
+      "id": "8939"
+    },
+    {
+      "img": "/skills/frontend/css.svg",
+      "name": "CSS",
+      "desc": "Style sheet language for creating intuitive GUIs",
+      "id": "f966"
+    },
+    {
+      "img": "/skills/frontend/tailwind.svg",
+      "name": "Tailwind CSS",
+      "desc": "CSS framework to make responsive design easier and quicker",
+      "id": "7d06"
+    },
+    {
+      "img": "/skills/frontend/react.svg",
+      "name": "React",
+      "desc": "Component based library used for creating large scale UIs.",
+      "id": "7fe1"
+    }
+  ],
+  "backend": [
+    {
+      "img": "/skills/backend/java.svg",
+      "name": "Java",
+      "desc": "Object Oriented Programming Language",
+      "id": "d56e"
+    },
+    {
+      "img": "/skills/backend/js.svg",
+      "name": "JavaScript",
+      "desc": "Leading language for implementing web functionality",
+      "id": "09db"
+    },
+    {
+      "img": "/skills/backend/node.svg",
+      "name": "Node.js",
+      "desc": "JavaScript runtime",
+      "id": "21c9"
+    },
+    {
+      "img": "/skills/backend/express.svg",
+      "name": "Express",
+      "desc": "Backend framework for JavaScript applications",
+      "id": "9dce"
+    }
+  ],
+  "databases": [
+    {
+      "img": "/skills/db/mysql.svg",
+      "name": "MySQL",
+      "desc": "Relational Database",
+      "id": "371f"
+    },
+    {
+      "img": "/skills/db/mongo.svg",
+      "name": "MongoDB",
+      "desc": "NoSQL Database",
+      "id": "0459"
+    }
+  ],
+  "tools": [
+    {
+      "img": "/skills/tools/vercel.svg",
+      "name": "Vercel",
+      "desc": "Used for deploying web applications",
+      "id": "2248"
+    },
+    {
+      "img": "/skills/tools/draw.io.svg",
+      "name": "draw.io",
+      "desc": "Used for creating logical ERDs for optimized database structure",
+      "id": "f838"
+    },
+    {
+      "img": "/skills/tools/github.svg",
+      "name": "GitHub",
+      "desc": "Used for Version Control & collabaration",
+      "id": "8470"
+    },
+    {
+      "img": "/skills/tools/koyeb.jpeg",
+      "name": "Koyeb",
+      "desc": "Used for deploying Express applications",
+      "id": "0a82"
+    }
+  ],
+  "contact": [
+    {
+      "id": "55d6",
+      "name": "Muhammad Ravat",
+      "email": "m0ravat736@gmail.com",
+      "contact": "fwef",
+      "feedback": "test"
+    }
+  ]
+}

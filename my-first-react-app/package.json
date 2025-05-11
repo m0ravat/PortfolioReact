@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://moravat.me.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,6 +15,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/lab": "^6.0.0-beta.27",
     "@mui/material": "^6.4.4",
+    "json-server": "^1.0.0-beta.3",
     "lucide-react": "^0.486.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
