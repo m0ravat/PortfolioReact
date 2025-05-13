@@ -1,4 +1,3 @@
-import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import MR from "/react-1.svg";
 import { useState } from "react"
@@ -22,18 +21,6 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {/* Desktop Menu */}
-      <ul className="flex space-x-[10%] max-[1100px]:hidden right-0 pr-64">
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link href="/skills">Skills</Link>
-        </li>
-      </ul>
 
             {/* Mobile Menu Button */}
             <button className=" text-cyan-500" onClick={toggleMenu} aria-label="Toggle menu">
@@ -85,12 +72,7 @@ export function HomeNavbar(){
               <img src={MR} alt="Logo" className='h-16 dark:bg-white text-white rounded-2xl  p-1 ' /> Muhammad Ravat</span>
             </li>
         </ul>
-        <ul className="flex space-x-10  max-[1100px]:hidden">
-            <li><ScrollLink to="home" smooth={true} duration={500}>Overview</ScrollLink></li>
-            <li><ScrollLink to="hist" smooth={true} duration={500}>History</ScrollLink></li>
-            <li><ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink></li>
-        </ul>
-            {/* Mobile Menu Button */}
+      {/* Mobile Menu Button */}
       <button className=" text-cyan-500" onClick={toggleMenu} aria-label="Toggle menu">
       {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
