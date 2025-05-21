@@ -1,7 +1,7 @@
 import Navbar from "../../Components/navbar";
 import ProjectList from "./projectsList";
 import { useState } from "react";
-import useFetch from "../useFetch";
+import {useFetch} from "../useFetch";
 const Projects = () => {
   const [modalImage, setModalImage] = useState(null);
   const {data: projects, isPending, error} = useFetch("https://jsonbackend-7liy.onrender.com/projects")

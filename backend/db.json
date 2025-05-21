@@ -39,7 +39,7 @@
     },
     {
       "title": "DSA Library",
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUClOQrZIZQZojI3CmJ3jC2eg&psig=AOvVaw2fCgUBgEDB5Uqd1RYbCbXX&ust=1747849059979000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCNjZ6qfLso0DFQAAAAAdAAAAABAE",
+      "image": "/projects/dsa.png",
       "lang": ["Java"],
       "tools": ["IntelliJ"],
       "deployed": "Local",
@@ -49,7 +49,7 @@
     },
     {
       "title": "RegEX Analysis",
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcoderpad.io%2Fblog%2Fdevelopment%2Fthe-complete-guide-to-regular-expressions-regex%2F&psig=AOvVaw2OFVoH_-1RH9Ua56neEOHc&ust=1747849276064000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCPCa2ZTMso0DFQAAAAAdAAAAABAE",
+      "image": "/projects/regex.png",
       "lang": ["Java"],
       "tools": ["IntelliJ"],
       "deployed": "Local",
@@ -59,7 +59,7 @@
     },    
     {
       "title": "Web Dev Essentials",
-      "image": "",
+      "image": "/projects/100.png",
       "lang": ["JavaScript", "HTML", "CSS"],
       "tools": ["Materialize CSS", "ES6", "SCSS", "Webpack"],
       "deployed": "Local",
@@ -69,7 +69,7 @@
     },
     {
       "title": "Sky High Fidelity Mockups",
-      "image": "",
+      "image": "/projects/highFid.png",
       "lang": ["HTML", "CSS", "JavaScript"],
       "tools": ["Tailwind CSS"],
       "deployed": "Local",
@@ -79,7 +79,7 @@
     },
     {
       "title": "Sky Health Check System",
-      "image": "",
+      "image": "/projects/sky.png",
       "lang": ["Python"],
       "frameworks": ["Django"],
       "deployed": "Local",
