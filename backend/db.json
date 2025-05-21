@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "title": "Mosque Learning Management Program",
-      "image": "/projects/madrasah.png",
-      "lang": ["Java"],
-      "tools": ["IntelliJ"],
-      "db": "MySQL",
-      "deployed": "Local",
-      "description": "A project which focuses on querying results from a database while implementing OOP principles",
-      "github": "https://github.com/m0ravat/MadrasahPro",
-      "id": "1c"
-    },
-    {
       "title": "MyNotesToDo (Project Management System)",
       "image": "/projects/mynotes.png",
       "lang": ["JavaScript"],
@@ -38,44 +27,15 @@
       "id": "1b"
     },
     {
-      "title": "DSA Library",
-      "image": "/projects/dsa.png",
+      "title": "Mosque Learning Management Program",
+      "image": "/projects/madrasah.png",
       "lang": ["Java"],
       "tools": ["IntelliJ"],
+      "db": "MySQL",
       "deployed": "Local",
-      "description": "A comprehensive analysis on functions available to data structures within Java like LinkedLists, trees, graphs and basic implementation of searching/sorting algorithms.",
-      "github": "https://github.com/m0ravat/DataStructure_Algo",
-      "id": "3a"
-    },
-    {
-      "title": "RegEX Analysis",
-      "image": "/projects/regex.png",
-      "lang": ["Java"],
-      "tools": ["IntelliJ"],
-      "deployed": "Local",
-      "description": "A comprehensive analysis on RegEX concepts including java specific syntax.",
-      "github": "https://github.com/m0ravat/regEX",
-      "id": "3b"
-    },    
-    {
-      "title": "Web Dev Essentials",
-      "image": "/projects/100.png",
-      "lang": ["JavaScript", "HTML", "CSS"],
-      "tools": ["Materialize CSS", "ES6", "SCSS", "Webpack"],
-      "deployed": "Local",
-      "description": "A comprehensive repo I designed to consolidate my foundations for web development, it looks at ES6 syntax deeper which helped me better understand JavaScript. I also looked at using webpack and revisiting CSS specific styles/libraries as well as semantic HTML elements.",
-      "github": "https://github.com/m0ravat/HTML100",
-      "id": "3c"
-    },
-    {
-      "title": "Sky High Fidelity Mockups",
-      "image": "/projects/highFid.png",
-      "lang": ["HTML", "CSS", "JavaScript"],
-      "tools": ["Tailwind CSS"],
-      "deployed": "Local",
-      "description": "I collaborated with a classmate to create mockup designs for a proposed Sky health check system utilising tailwind CSS alongside HTML.",
-      "github": "https://github.com/m0ravat/HealthCheckFidelity",
-      "id": "2b"
+      "description": "A project which focuses on querying results from a database while implementing OOP principles",
+      "github": "https://github.com/m0ravat/MadrasahPro",
+      "id": "1c"
     },
     {
       "title": "Sky Health Check System",
@@ -86,6 +46,25 @@
       "description": "I collaborated with classmates to create a Sky health check system implementing previous high fidelity mockups and adapting it into a Django environment.",
       "github": "https://github.com/m0ravat/groupSkyHealthProject",
       "id": "1d"
+    },
+    {
+      "title": "Password Generator",
+      "image": "/projects/pass.png",
+      "lang": ["Python"],
+      "deployed": "Local",
+      "description": "My first personal Python project which utilises many core concepts to allow people to create strong passwords",
+      "github": "https://github.com/m0ravat/PasswordGen",
+      "id": "2a"
+    },
+    {
+      "title": "Sky High Fidelity Mockups",
+      "image": "/projects/highFid.png",
+      "lang": ["HTML", "CSS", "JavaScript"],
+      "tools": ["Tailwind CSS"],
+      "deployed": "Local",
+      "description": "I collaborated with a classmate to create mockup designs for a proposed Sky health check system utilising tailwind CSS alongside HTML.",
+      "github": "https://github.com/m0ravat/HealthCheckFidelity",
+      "id": "2b"
     },
     {
       "title": "Weather App",
@@ -110,15 +89,6 @@
       "id": "2d"
     },
     {
-      "title": "Password Generator",
-      "image": "/projects/pass.png",
-      "lang": ["Python"],
-      "deployed": "Local",
-      "description": "My first personal Python project which utilises many core concepts to allow people to create strong passwords",
-      "github": "https://github.com/m0ravat/PasswordGen",
-      "id": "2f"
-    },
-    {
       "title": "Calculator App",
       "image": "/projects/calc.png",
       "lang": ["JavaScript", "HTML", "CSS"],
@@ -127,8 +97,39 @@
       "github": "https://github.com/m0ravat/Calculator",
       "live": "https://calculator-murex-omega.vercel.app/",
       "id": "2e"
+    },
+    {
+      "title": "DSA Library",
+      "image": "/projects/dsa.png",
+      "lang": ["Java"],
+      "tools": ["IntelliJ"],
+      "deployed": "Local",
+      "description": "A comprehensive analysis on functions available to data structures within Java like LinkedLists, trees, graphs and basic implementation of searching/sorting algorithms.",
+      "github": "https://github.com/m0ravat/DataStructure_Algo",
+      "id": "3a"
+    },
+    {
+      "title": "RegEX Analysis",
+      "image": "/projects/regex.png",
+      "lang": ["Java"],
+      "tools": ["IntelliJ"],
+      "deployed": "Local",
+      "description": "A comprehensive analysis on RegEX concepts including java specific syntax.",
+      "github": "https://github.com/m0ravat/regEX",
+      "id": "3b"
+    },
+    {
+      "title": "Web Dev Essentials",
+      "image": "/projects/100.png",
+      "lang": ["JavaScript", "HTML", "CSS"],
+      "tools": ["Materialize CSS", "ES6", "SCSS", "Webpack"],
+      "deployed": "Local",
+      "description": "A comprehensive repo I designed to consolidate my foundations for web development, it looks at ES6 syntax deeper which helped me better understand JavaScript. I also looked at using webpack and revisiting CSS specific styles/libraries as well as semantic HTML elements.",
+      "github": "https://github.com/m0ravat/HTML100",
+      "id": "3c"
     }
   ],
+
   "frontend": [
     {
       "img": "/skills/frontend/html.svg",
