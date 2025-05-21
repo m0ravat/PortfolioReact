@@ -4,8 +4,16 @@ const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const cors = require('cors');
 
+// Apply CORS before other middleware
 server.use(cors({
-  origin: 'https://moravat.me'
+  origin: function (origin, callback) {
+    const allowedOrigins = ['https://moravat.me'];
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
 }));
 
 server.use(middlewares);
