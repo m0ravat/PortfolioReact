@@ -3,56 +3,130 @@
     {
       "title": "Mosque Learning Management Program",
       "image": "/projects/madrasah.png",
+      "lang": ["Java"],
+      "tools": ["IntelliJ"],
+      "db": "MySQL",
+      "deployed": "Local",
       "description": "A project which focuses on querying results from a database while implementing OOP principles",
       "github": "https://github.com/m0ravat/MadrasahPro",
-      "id": "5db1"
+      "id": "1c"
     },
     {
       "title": "MyNotesToDo (Project Management System)",
       "image": "/projects/mynotes.png",
+      "lang": ["JavaScript"],
+      "tools": ["Socket.io", "Mongoose", "JWT"],
+      "frameworks": ["Express"],
+      "db": "MongoDB",
+      "deployed": "Render",
       "description": "An app that allows you to create projects and keep track of tasks to do by storing data in localstorage",
       "github": "https://github.com/m0ravat/MyNotesToDo",
       "live": "https://www.mynotestodo.com",
-      "id": "1850"
+      "id": "1a"
     },
     {
       "title": "Personal Portfolio",
       "image": "/projects/portfolio.png",
+      "lang": ["JavaScript"],
+      "tools": ["JSON Server", "Vite", "Tailwind CSS"],
+      "frameworks": ["React"],
+      "db": "JSON",
+      "deployed": "Railway",
       "description": "Personal Portfolio designed to showcase my skills to employers and develop my frontend skills",
       "github": "https://github.com/m0ravat/PortfolioReact",
       "live": "https://www.moravat.me",
-      "id": "9b3e"
+      "id": "1b"
+    },
+    {
+      "title": "DSA Library",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUClOQrZIZQZojI3CmJ3jC2eg&psig=AOvVaw2fCgUBgEDB5Uqd1RYbCbXX&ust=1747849059979000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCNjZ6qfLso0DFQAAAAAdAAAAABAE",
+      "lang": ["Java"],
+      "tools": ["IntelliJ"],
+      "deployed": "Local",
+      "description": "A comprehensive analysis on functions available to data structures within Java like LinkedLists, trees, graphs and basic implementation of searching/sorting algorithms.",
+      "github": "https://github.com/m0ravat/DataStructure_Algo",
+      "id": "3a"
+    },
+    {
+      "title": "RegEX Analysis",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcoderpad.io%2Fblog%2Fdevelopment%2Fthe-complete-guide-to-regular-expressions-regex%2F&psig=AOvVaw2OFVoH_-1RH9Ua56neEOHc&ust=1747849276064000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCPCa2ZTMso0DFQAAAAAdAAAAABAE",
+      "lang": ["Java"],
+      "tools": ["IntelliJ"],
+      "deployed": "Local",
+      "description": "A comprehensive analysis on RegEX concepts including java specific syntax.",
+      "github": "https://github.com/m0ravat/regEX",
+      "id": "3b"
+    },    
+    {
+      "title": "Web Dev Essentials",
+      "image": "",
+      "lang": ["JavaScript", "HTML", "CSS"],
+      "tools": ["Materialize CSS", "ES6", "SCSS", "Webpack"],
+      "deployed": "Local",
+      "description": "A comprehensive repo I designed to consolidate my foundations for web development, it looks at ES6 syntax deeper which helped me better understand JavaScript. I also looked at using webpack and revisiting CSS specific styles/libraries as well as semantic HTML elements.",
+      "github": "https://github.com/m0ravat/HTML100",
+      "id": "3c"
+    },
+    {
+      "title": "Sky High Fidelity Mockups",
+      "image": "",
+      "lang": ["HTML", "CSS", "JavaScript"],
+      "tools": ["Tailwind CSS"],
+      "deployed": "Local",
+      "description": "I collaborated with a classmate to create mockup designs for a proposed Sky health check system utilising tailwind CSS alongside HTML.",
+      "github": "https://github.com/m0ravat/HealthCheckFidelity",
+      "id": "2b"
+    },
+    {
+      "title": "Sky Health Check System",
+      "image": "",
+      "lang": ["Python"],
+      "frameworks": ["Django"],
+      "deployed": "Local",
+      "description": "I collaborated with classmates to create a Sky health check system implementing previous high fidelity mockups and adapting it into a Django environment.",
+      "github": "https://github.com/m0ravat/groupSkyHealthProject",
+      "id": "1d"
     },
     {
       "title": "Weather App",
       "image": "/projects/weather.png",
+      "lang": ["JavaScript", "HTML", "CSS"],
+      "tools": ["GIPHY API", "Visual Crossing API"],
+      "deployed": "Vercel",
       "description": "Basic project I developed to create a mobile friendly UI and utilise APIs.",
       "github": "https://github.com/m0ravat/WeatherApp",
       "live": "https://weather-app-steel-mu.vercel.app/",
-      "id": "d781"
+      "id": "2c"
     },
     {
       "title": "CV Generator",
       "image": "/projects/cv.png",
+      "lang": ["JavaScript"],
+      "frameworks": ["React"],
+      "deployed": "Vercel",
       "description": "My first React project which helped me grasp core concepts with forms and state management.",
       "github": "https://github.com/m0ravat/CVMaker",
       "live": "https://cv-maker-vert-seven.vercel.app/",
-      "id": "cce1"
+      "id": "2d"
     },
     {
       "title": "Password Generator",
       "image": "/projects/pass.png",
+      "lang": ["Python"],
+      "deployed": "Local",
       "description": "My first personal Python project which utilises many core concepts to allow people to create strong passwords",
       "github": "https://github.com/m0ravat/PasswordGen",
-      "id": "3d07"
+      "id": "2f"
     },
     {
       "title": "Calculator App",
       "image": "/projects/calc.png",
+      "lang": ["JavaScript", "HTML", "CSS"],
+      "deployed": "Vercel",
       "description": "My first JavaScript project which utilises string manipulation to create a basic calculator. Used HTML/CSS to create a basic look for it",
       "github": "https://github.com/m0ravat/Calculator",
       "live": "https://calculator-murex-omega.vercel.app/",
-      "id": "cd0e"
+      "id": "2e"
     }
   ],
   "frontend": [
