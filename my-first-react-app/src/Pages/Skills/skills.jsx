@@ -1,5 +1,5 @@
 import Navbar from "../../Components/navbar"
-import useFetch from "../useFetch";
+import {useFetch} from "../useFetch";
 import { DbList, BackList, FrontList, ToolsList } from "./skillsList";
 
 export default function Skills() {
